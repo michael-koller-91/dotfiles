@@ -55,7 +55,8 @@ This function should only modify configuration layer settings."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
-     treemacs)
+     treemacs
+     tree-sitter)
 
 
    ;; List of additional packages that will be installed without being wrapped
@@ -67,7 +68,8 @@ This function should only modify configuration layer settings."
    ;; `:location' property: '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages
-   '(sqlite3)
+   '(sqlite3
+    vhdl-ext)
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -260,7 +262,7 @@ It should only modify the values of Spacemacs settings."
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 18.5
+                               :size 15.5
                                :weight normal
                                :width normal)
 
