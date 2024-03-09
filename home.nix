@@ -83,7 +83,7 @@
     };
     recursive = true;
   };
-  home.file.".spacemacs".source = ./org.spacemacs;
+  home.file.".spacemacs".source = ./general.spacemacs;
 
   programs.zsh = {
     enable = true;
