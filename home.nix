@@ -88,6 +88,7 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
+      emacs = "emacs-29.2";
       ll = "ls -l";
       la = "ls -al";
     };
