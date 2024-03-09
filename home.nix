@@ -70,13 +70,26 @@
     enable = true;
     shellAliases = {
       ll = "ls -l";
+      la = "ls -al";
     };
   };
+
+  programs.emacs.enable = true;
+  home.file.".emacs.d" = {
+    source = builtins.fetchGit {
+      url = "https://github.com/syl20bnr/spacemacs";
+      ref = "develop";
+      rev = "4a227fc94651136a8de54bcafa7d22abe1fa0295";
+    };
+    recursive = true;
+  };
+  home.file.".spacemacs".source = ./org.spacemacs;
 
   programs.zsh = {
     enable = true;
     shellAliases = {
-      ll = "ls -a";
+      ll = "ls -l";
+      la = "ls -al";
     };
   };
 
