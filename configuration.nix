@@ -105,8 +105,10 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     emacs29
+    ghdl
     git
     gtk3
+    gtkwave
     python3
     vim
     wget
