@@ -106,6 +106,8 @@
   environment.systemPackages = with pkgs; [
     emacs29
     git
+    gtk3
+    python3
     vim
     wget
   ];
