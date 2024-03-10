@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = koller_michael@outlok.de
+	name = Michael Koller
+[core]
+	editor = vim
