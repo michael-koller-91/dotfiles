@@ -88,6 +88,8 @@
   };
   home.file.".spacemacs".source = ./general.spacemacs;
 
+  home.file.".gitconfig".source = ./.gitconfig;
+
   programs.zsh = {
     enable = true;
     shellAliases = {
