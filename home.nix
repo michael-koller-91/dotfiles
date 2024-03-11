@@ -86,7 +86,7 @@
     };
     recursive = true;
   };
-  home.file.".spacemacs".source = ./general.spacemacs;
+  home.file.".spacemacs".source = ./.spacemacs.general;
 
   home.file.".gitconfig".source = ./.gitconfig;
 
