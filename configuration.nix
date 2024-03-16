@@ -110,6 +110,7 @@
     git
     gtk3
     gtkwave
+    # gnumake
     python3
     vim
     wget
