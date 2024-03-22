@@ -90,6 +90,8 @@
 
   home.file.".gitconfig".source = ./.gitconfig;
 
+  home.file.".vimrc".source = ./.vimrc;
+
   programs.zsh = {
     enable = true;
     shellAliases = {
