@@ -107,6 +107,7 @@
     emacs29
     git
     gtk3
+    htop
     onedrive
     python3
     vim
