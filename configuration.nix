@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, nvim-kickstart, ... }:
 
 {
   imports =
@@ -101,6 +101,10 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  nixpkgs.overlays = [
+    nvim-kickstart.overlays.default
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -108,6 +112,7 @@
     git
     gtk3
     htop
+    nvim-pkg
     onedrive
     python3
     vim
