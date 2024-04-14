@@ -4,13 +4,13 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-23.11";
-    #nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
 
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nvim-kickstart.url = "github:michael-koller-91/nvim-kickstart";
-    #nvim-kickstart.inputs.nixpkgs.follows = "nixpkgs-unstable";
+    nvim-kickstart.inputs.nixpkgs.follows = "nixpkgs-unstable";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, nvim-kickstart, ...}:
