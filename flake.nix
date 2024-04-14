@@ -4,19 +4,19 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-23.11";
+    #nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
 
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nvim-kickstart.url = "github:michael-koller-91/nvim-kickstart";
-    nvim-kickstart.inputs.nixpkgs.follows = "nixpkgs";
+    #nvim-kickstart.inputs.nixpkgs.follows = "nixpkgs-unstable";
   };
 
-  outputs = { self, nixpkgs, home-manager, nvim-kickstart, ...}:
+  outputs = inputs@{ self, nixpkgs, home-manager, nvim-kickstart, ...}:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
-      #pkgs = nixpkgs.legacyPackages.${system};
 
       pkgs = import nixpkgs {
         inherit system;

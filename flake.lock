@@ -125,13 +125,27 @@
         "type": "github"
       }
     },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1712163089,
+        "narHash": "sha256-Um+8kTIrC19vD4/lUCN9/cU9kcOsD1O1m+axJqQPyMM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "fd281bd6b7d3e32ddfa399853946f782553163b5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nvim-kickstart": {
       "inputs": {
         "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "lastModified": 1712691696,
