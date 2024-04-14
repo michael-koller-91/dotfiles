@@ -112,6 +112,7 @@
     git
     gtk3
     htop
+    i3
     nvim-pkg
     onedrive
     python3
