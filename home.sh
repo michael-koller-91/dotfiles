@@ -1,6 +1,9 @@
 #! /bin/bash
 
-HOME_FILES=".gitconfig"
+HOME_FILES="
+.gitconfig
+.zshrc
+"
 
 for f in $HOME_FILES
 do
