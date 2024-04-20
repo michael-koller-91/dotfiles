@@ -1,3 +1,11 @@
+# install a font
+
+* download the .zip
+* `unzip <Font>.zip -d ~/.fonts`
+* `fc-cache -fv`
+
+# useful `nix` commands
+
 ```bash
 nix flake update
 sudo nixos-rebuild switch --flake .
