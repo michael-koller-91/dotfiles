@@ -1,7 +1,7 @@
 [init]
 	defaultBranch = main
 [user]
-	email = koller_michael@outlok.de
+	email = koller_michael@outlook.de
 	name = Michael Koller
 [core]
 	editor = nvim
