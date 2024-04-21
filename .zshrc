@@ -10,3 +10,9 @@ zstyle :compinstall filename '/home/miko/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias vim='nvim'
+
