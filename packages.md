@@ -8,6 +8,7 @@
 
 # snap
 
+* curl
 * nvim
 * ripgrep
 
