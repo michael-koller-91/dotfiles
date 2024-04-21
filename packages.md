@@ -1,5 +1,6 @@
 # apt
 
+* curl
 * gcc
 * git
 * make
@@ -8,7 +9,6 @@
 
 # snap
 
-* curl
 * nvim
 * ripgrep
 
