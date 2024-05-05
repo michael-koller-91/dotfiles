@@ -2,6 +2,7 @@
 
 HOME_FILES="
 .gitconfig
+.tmux.conf
 .zshrc
 "
 

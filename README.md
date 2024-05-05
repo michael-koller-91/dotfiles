@@ -16,5 +16,8 @@ sudo nix-env -p /nix/var/nix/profiles/system --delete-generations <number>
 
 nix store delete /nix/store/hash
 nix-collect-garbage -d
+
+# get the hash
+nix flake prefetch github:<owner>/<repo>/<ref>
 ```
 
