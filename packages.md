@@ -13,4 +13,5 @@
 # snap
 
 * nvim
+* thunderbird
 
