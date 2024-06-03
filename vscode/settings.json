@@ -1,0 +1,247 @@
+{
+    // cmake
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    // editor
+    "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 14,
+    "editor.rulers": [
+        79,
+        120
+    ],
+    "editor.cursorBlinking": "expand",
+    "editor.renderLineHighlight": "all",
+    "editor.tokenColorCustomizations": {
+        "[Coda Classic]": {
+            "keywords": "#ff29c9",
+            "functions": "#254bf5",
+            "numbers": "#f051ff",
+            "strings": "#5395bc",
+            "textMateRules": [
+                {
+                    "scope": "string",
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "name": "Function argument",
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "foreground": "#f89729"
+                    }
+                }
+            ]
+        }
+    },
+    //
+    "explorer.openEditors.sortOrder": "alphabetical",
+    // files
+    "files.associations": {
+        "*.pp": "pascal"
+    },
+    // julia
+    "julia.executablePath": "julia",
+    "julia.enableTelemetry": false,
+    "julia.symbolCacheDownload": true,
+    // git
+    "git.openRepositoryInParentFolders": "never",
+    // githd
+    "githd.blameView.enabled": false,
+    // gitlens
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    // latex
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk 🔃",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "latexmk (latexmkrc)",
+            "tools": [
+                "latexmk_rconly"
+            ]
+        },
+        {
+            "name": "latexmk (lualatex)",
+            "tools": [
+                "lualatexmk"
+            ]
+        },
+        {
+            "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "pdflatex × 2",
+            "tools": [
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "Compile Rnw files",
+            "tools": [
+                "rnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "Compile Jnw files",
+            "tools": [
+                "jnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "tectonic",
+            "tools": [
+                "tectonic"
+            ]
+        }
+    ],
+    // markdown
+    "markdown.preview.fontSize": 17,
+    // notes
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 2,
+    // python
+    "flake8.args": [
+        "--max-line-length=120"
+    ],
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    // systemverilog
+    "[systemverilog]": {
+        // "editor.defaultFormatter": "bmpenuelas.systemverilog-formatter-vscode"
+        "editor.defaultFormatter": "kukdh1.verible-formatter"
+    },
+    // terminal
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    // vhdl
+    "[vhdl]": {
+        "editor.tabSize": 3
+    },
+    // vim
+    // "vim.handleKeys": {
+    // "<C-k>": false
+    // },
+    // -- (begin) This is from https://github.com/VSpaceCode/VSpaceCode/blob/master/src/configuration/settings.jsonc
+    // Vim easymotion is required for Jump menu - <SPC> j
+    "vim.easymotion": true,
+    // Use system clipboard for vim
+    "vim.useSystemClipboard": true,
+    // Trigger the main which key menu with in the active editor with vim
+    // This cannot be put into keybindings.json because it will
+    // create conflict with Vim.
+    // https://github.com/stevenguh/spacecode/issues/3
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        },
+        // (except for this part)
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+    // -- (end)
+    // workbench
+    "workbench.colorTheme": "GitHub Light",
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#F8F8F8",
+        "editor.lineHighlightBorder": "#C6C6C6",
+        "editor.selectionHighlightBackground": "#f3c9a6"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    // zen
+    "zenMode.hideStatusBar": false
+}
