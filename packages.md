@@ -8,6 +8,7 @@
 * ripgrep (if installed via snap, nvim's :Telescope find_files won't work)
 * tmux
 * unzip
+* xclip
 * zsh
 
 # snap
