@@ -2,6 +2,7 @@
 
 * curl (if installed via snap, installing Nix with it won't work)
 * fd-find
+* g++
 * gcc
 * git
 * make
