@@ -29,4 +29,5 @@ RUN git clone https://github.com/neovim/neovim.git && \
 
 # add neovim config and run initialization
 RUN git clone https://github.com/michael-koller-91/kickstart.nvim.git ~/.config/nvim && \
-    nvim --headless -c "MasonInstallAll" -c 'TSInstallSync all' -c "quitall"
+    nvim --headless -c "MasonInstallAll" -c 'TSUpdate' -c "quitall"
+    # nvim --headless -c "MasonInstallAll" -c 'TSInstallSync all' -c "quitall" # this installs everything
