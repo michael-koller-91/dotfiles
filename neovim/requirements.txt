@@ -1,1 +1,5 @@
 black
+pandas
+numba
+numpy
+
