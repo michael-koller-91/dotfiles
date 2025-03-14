@@ -20,4 +20,3 @@ nix-collect-garbage -d
 # get the hash
 nix flake prefetch github:<owner>/<repo>/<ref>
 ```
-
