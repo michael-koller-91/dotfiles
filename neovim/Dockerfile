@@ -4,14 +4,15 @@ RUN echo 'APT::Install-Suggests "0";' >> /etc/apt/apt.conf.d/00-docker
 RUN echo 'APT::Install-Recommends "0";' >> /etc/apt/apt.conf.d/00-docker
 
 RUN apt-get update && \
-    apt install python3 -y && \
-    apt install python3-pip -y && \
-    apt install python3-venv -y && \
     apt install build-essential -y && \
     apt install ca-certificates -y && \
     apt install cmake -y && \
     apt install git -y && \
+    apt install lua5.4 -y && \
     apt install openssh-client -y && \
+    apt install python3 -y && \
+    apt install python3-pip -y && \
+    apt install python3-venv -y && \
     apt install unzip -y && \
     apt install wget -y
 
