@@ -8,6 +8,7 @@
     "editor.fontSize": 14,
     "editor.rulers": [
         79,
+        88,
         120
     ],
     "editor.cursorBlinking": "expand",
@@ -33,6 +34,9 @@
                     }
                 }
             ]
+        },
+        "[GitHub Light]": {
+            "strings": "#5176cd",
         }
     },
     //
@@ -116,11 +120,13 @@
     "markdown.preview.fontSize": 17,
     // notes
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 2,
     // python
     "flake8.args": [
         "--max-line-length=120"
     ],
+    "python.formatting.provider": "black",
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pylintEnabled": true,
     "[python]": {
         "editor.formatOnType": true,
         "editor.defaultFormatter": "ms-python.black-formatter"
@@ -137,7 +143,7 @@
     ],
     // vhdl
     "[vhdl]": {
-        "editor.tabSize": 3
+        "editor.tabSize": 4
     },
     // vim
     // "vim.handleKeys": {
@@ -243,5 +249,16 @@
         "*.ipynb": "jupyter.notebook.ipynb"
     },
     // zen
-    "zenMode.hideStatusBar": false
+    "zenMode.hideStatusBar": false,
+    "window.zoomLevel": 1,
+    "workbench.sideBar.location": "right",
+    "git.mergeEditor": true,
+    "python.defaultInterpreterPath": "D:\\g\\rlm.fpga.projects.pb3\\.venv",
+    "terminal.integrated.stickyScroll.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "sigasi.vhdl.stuttering": false,
+    "chat.commandCenter.enabled": false,
+    "python.terminal.launchArgs": [],
+    "python.locator": "js"
 }
