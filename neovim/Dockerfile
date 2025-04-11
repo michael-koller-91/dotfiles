@@ -13,6 +13,7 @@ RUN apt-get update && \
     apt install python3 -y && \
     apt install python3-pip -y && \
     apt install python3-venv -y && \
+    apt install ripgrep -y && \
     apt install unzip -y && \
     apt install wget -y
 
