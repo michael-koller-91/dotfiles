@@ -1,4 +1,7 @@
 {
+    "telemetry.telemetryLevel": "off",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
     // cmake
     "cmake.configureOnOpen": false,
     "cmake.configureOnEdit": false,
