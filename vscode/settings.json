@@ -1,4 +1,5 @@
 {
+    // telemetry
     "telemetry.telemetryLevel": "off",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -148,6 +149,8 @@
     "[vhdl]": {
         "editor.tabSize": 4
     },
+    // keyboard
+    "keyboard.dispatch": "keyCode",
     // vim
     // "vim.handleKeys": {
     // "<C-k>": false
