@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 mkdir downloads
 wget -P downloads https://github.com/neovim/neovim/releases/download/v0.11.3/nvim-linux-x86_64.tar.gz
