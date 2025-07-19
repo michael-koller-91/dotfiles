@@ -37,4 +37,6 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # miko
 alias cat='batcat -n'
+alias la='eza -ahl'
+alias ll='eza -hl'
 alias ls='eza -h'
