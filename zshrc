@@ -1,8 +1,10 @@
 # Set up the prompt
 
-autoload -Uz promptinit
-promptinit
-prompt adam1
+autoload -Uz vcs_info
+precmd () { vcs_info } # always load before displaying the prompt
+zstyle ':vcs_info:*' formats ' (%F{green}%b%f)'
+setopt prompt_subst
+PROMPT='%B%F{blue}%(4~|...|)%3~%F{white}$vcs_info_msg_0_ %# %b%f%k'
 
 setopt histignorealldups sharehistory
 
@@ -35,8 +37,9 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# miko
+# aliases
 alias cat='batcat -n'
 alias la='eza -ahl'
 alias ll='eza -hl'
 alias ls='eza -h'
+
