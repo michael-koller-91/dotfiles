@@ -9,6 +9,7 @@ apt install fd-find
 apt install gcc -y
 apt install git
 apt install python3-pip -y
+apt install python3-venv -y
 apt install konsole
 apt install make
 apt install ripgrep
