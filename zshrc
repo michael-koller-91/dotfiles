@@ -43,6 +43,7 @@ alias la='eza -ahl'
 alias ll='eza -hl'
 alias ls='eza -h'
 alias python='python3'
+alias start='xdg-open'
 
 # init direnv
 eval "$(direnv hook zsh)"
