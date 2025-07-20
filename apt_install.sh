@@ -14,5 +14,7 @@ apt install konsole
 apt install make
 apt install nfs-common -y
 apt install ripgrep
+apt install texlive-fonts-extra -y
+apt install texlive-latex-extra -y
 apt install unzip
 apt install zsh -y
