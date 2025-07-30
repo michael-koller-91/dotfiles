@@ -18,5 +18,6 @@ apt install onedrive -y
 apt install ripgrep
 apt install texlive-fonts-extra -y
 apt install texlive-latex-extra -y
+apt install tree-sitter-cli -y
 apt install unzip
 apt install zsh -y
