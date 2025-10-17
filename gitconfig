@@ -7,6 +7,7 @@
 	editor = nvim
 [alias]
 	graph = log --oneline --decorate --graph
+	m = !bash gitfunctions.sh
 	basediff = "!f() { \
         	git diff $(git merge-base $1 --fork-point $2) $2 $3; \
 	}; f"
