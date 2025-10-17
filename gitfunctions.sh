@@ -56,6 +56,16 @@ select_file() {
   echo "$file"
 }
 
+summary() {
+  if [ "$1" == "-h" ]; then
+    echo "Example usage: summary"
+    echo "Output a condensed summary of extended header information."
+    exit 0
+  fi
+
+  git diff --compact-summary
+}
+
 stage() {
   if [ "$1" == "-h" ]; then
     echo "Example usage: stage 1"
@@ -108,3 +118,4 @@ unstage() {
 }
 
 "$@"
+
