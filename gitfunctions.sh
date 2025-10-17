@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+GREEN=$(tput setaf 2)
+NORMAL=$(tput sgr0)
+RED=$(tput setaf 1)
+
 add() {
   local git_status_array
   get_status_files git_status_array
@@ -7,6 +11,15 @@ add() {
   local file=$(select_file git_status_array $1)
 
   git add $file
+}
+
+diff() {
+  local git_status_array
+  get_status_files git_status_array
+
+  local file=$(select_file git_status_array $1)
+
+  git diff HEAD $file
 }
 
 get_status_files() {
@@ -48,8 +61,14 @@ status() {
   local git_status_array
   get_status_files git_status_array
 
+  local s sub
+  local first second
   for i in "${!git_status_array[@]}"; do
-    printf "%3i: ${git_status_array[$i]}\n" $i
+    s=${git_status_array[$i]}
+    sub=${s:2}
+    first=${s:0:1}
+    second=${s:1:1}
+    printf "%3i: ${GREEN}$first${RED}$second${NORMAL}$sub\n" $i
   done
 }
 
