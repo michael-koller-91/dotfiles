@@ -39,6 +39,3 @@
 			echo "$branch -\\> $(git rev-parse $branch)"; \
 		done; \
 	}; f"
-	add-submodule-pointer = "!f() { \
-		git update-index --cacheinfo 160000,$1,$2; \
-	}; f"
