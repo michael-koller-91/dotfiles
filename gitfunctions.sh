@@ -71,6 +71,17 @@ stage() {
   git add $file
 }
 
+stage_submodule() {
+  if [ "$1" == "-h" ]; then
+    echo "Example usage: stage_submodule 9a34b28b4775a37421fa6cd777b7aaf454a7e9ab sub"
+    echo "Equivalent to the following chain of commands: cd sub, git checkout 9a34b28b4775a37421fa6cd777b7aaf454a7e9ab, cd .., git add sub"
+    echo "Can be done without having cloned the submodule."
+    exit 0
+  fi
+
+  git update-index --cacheinfo 160000,$1,$2
+}
+
 status() {
   if [ "$1" == "-h" ]; then
     echo "Example usage: status"
