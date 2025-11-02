@@ -9,6 +9,7 @@ apt install fd-find
 apt install gcc -y
 apt install git
 apt install htop
+apt install i3 -y
 apt install python3-pip -y
 apt install python3-venv -y
 apt install konsole
