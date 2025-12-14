@@ -4,6 +4,14 @@
 * `unzip <Font>.zip -d ~/.fonts`
 * `fc-cache -fv`
 
+# install Rust
+
+```bash
+curl https://sh.rustup.rs -sSf > rust_init.sh
+chmod +x rust_init.sh
+./rust_init.sh --no-modify-path
+```
+
 # useful `nix` commands
 
 ```sh

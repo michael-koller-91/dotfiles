@@ -3,6 +3,7 @@
 apt update
 
 apt install bat -y
+apt install curl
 apt install direnv
 apt install eza
 apt install fd-find
