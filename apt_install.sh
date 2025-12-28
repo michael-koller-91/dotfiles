@@ -7,6 +7,7 @@ apt install curl
 apt install direnv
 apt install eza
 apt install fd-find
+apt install flameshot -y
 apt install gcc -y
 apt install git
 apt install htop
