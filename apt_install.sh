@@ -12,6 +12,7 @@ apt install gcc -y
 apt install git
 apt install htop
 apt install i3 -y
+apt install i3xrocks-battery
 apt install python3-pip -y
 apt install python3-venv -y
 apt install konsole -y
