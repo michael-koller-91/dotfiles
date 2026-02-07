@@ -13,6 +13,8 @@ apt install git
 apt install htop
 apt install i3 -y
 apt install i3xrocks-battery
+apt install i3xrocks-cpu-usage
+apt install i3xrocks-memory
 apt install python3-pip -y
 apt install python3-venv -y
 apt install konsole -y
@@ -23,6 +25,7 @@ apt install onedrive -y
 apt install ripgrep
 apt install texlive-fonts-extra -y
 apt install texlive-latex-extra -y
-apt install tree-sitter-cli -y
+apt install thunderbird
 apt install unzip
+apt install xclip
 apt install zsh -y
