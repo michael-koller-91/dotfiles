@@ -28,3 +28,15 @@ nix-collect-garbage -d
 # get the hash
 nix flake prefetch github:<owner>/<repo>/<ref>
 ```
+
+# increase swap file
+```bash
+swapon --show # get the name of the swapfile and use it in the following commands
+sudo swapoff /swapfile
+sudo fallocate -l 16G /swapfile
+ls -lh /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+swapon --show # to confirm it worked
+```
+
