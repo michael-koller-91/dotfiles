@@ -3,11 +3,13 @@
 apt update
 
 apt install bat -y
-apt install curl
+apt install curl -y
 apt install direnv
 apt install eza
 apt install fd-find
+apt install feh -y
 apt install flameshot -y
+apt install libfftw3-dev -y
 apt install gcc -y
 apt install git
 apt install htop
@@ -20,6 +22,7 @@ apt install python3-venv -y
 apt install konsole -y
 apt install make
 apt install mtpaint -y
+apt install net-tools
 apt install nfs-common -y
 apt install onedrive -y
 apt install ripgrep
